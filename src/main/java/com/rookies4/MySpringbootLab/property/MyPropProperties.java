@@ -1,0 +1,14 @@
+package com.rookies4.MySpringbootLab.property;
+
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Component
+@ConfigurationProperties("myboot")
+@Getter @Setter
+public class MyPropProperties {
+    private String username;
+    private int port;
+}
