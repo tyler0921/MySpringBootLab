@@ -6,8 +6,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties("myboot")
-@Getter @Setter
+@ConfigurationProperties("myprop")
+@Getter
+@Setter
 public class MyPropProperties {
     private String username;
     private int port;
