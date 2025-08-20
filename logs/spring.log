@@ -53,3 +53,52 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
+2025-08-19T17:43:25.874+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] c.r.M.MySpringbootLabApplication         : Starting MySpringbootLabApplication using Java 17.0.2 with PID 18888 (C:\mybackend\Springboot\MySpringbootLab\target\classes started by user in C:\mybackend\Springboot\MySpringbootLab)
+2025-08-19T17:43:25.877+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] c.r.M.MySpringbootLabApplication         : The following 1 profile is active: "prod"
+2025-08-19T17:43:25.927+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-19T17:43:25.927+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-19T17:43:26.847+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T17:43:26.893+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2025-08-19T17:43:27.429+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-19T17:43:27.440+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T17:43:27.440+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T17:43:27.482+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T17:43:27.483+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1555 ms
+2025-08-19T17:43:27.789+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T17:43:27.847+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T17:43:27.890+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T17:43:28.183+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T17:43:28.205+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T17:43:28.269+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7d56e27d
+2025-08-19T17:43:28.271+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T17:43:28.288+09:00  WARN 18888 --- [MySpringBootLab] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T17:43:28.303+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T17:43:28.860+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T17:43:28.938+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T17:43:29.342+09:00  WARN 18888 --- [MySpringBootLab] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T17:43:29.608+09:00  WARN 18888 --- [MySpringBootLab] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-19T17:43:29.833+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/lab_db?user=lab&password=***'
+2025-08-19T17:43:29.873+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-19T17:43:29.880+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T17:43:29.959+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-19T17:43:29.969+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] c.r.M.MySpringbootLabApplication         : Started MySpringbootLabApplication in 4.606 seconds (process running for 5.03)
+2025-08-19T17:43:29.976+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] c.r.MySpringbootLab.runner.MyPropRunner  : MyBootProperties getUsername() = Prod Env
+2025-08-19T17:43:29.976+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] c.r.MySpringbootLab.runner.MyPropRunner  : MyBootProperties getPort() = 50
+2025-08-19T17:43:29.976+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] c.r.MySpringbootLab.runner.MyPropRunner  : 설정된 Port 번호 = 8080
+2025-08-19T17:43:29.977+09:00  INFO 18888 --- [MySpringBootLab] [restartedMain] c.r.MySpringbootLab.runner.MyPropRunner  : 현재 활성화된 MyEnvironment Bean = MyEnvironment(mode=운영환경)
+2025-08-19T17:44:33.049+09:00  INFO 18888 --- [MySpringBootLab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T17:44:33.050+09:00  INFO 18888 --- [MySpringBootLab] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T17:44:33.051+09:00  INFO 18888 --- [MySpringBootLab] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-19T17:46:05.677+09:00  WARN 18888 --- [MySpringBootLab] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-08-19T17:48:19.662+09:00  INFO 18888 --- [MySpringBootLab] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T17:48:19.769+09:00  INFO 18888 --- [MySpringBootLab] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-19T17:48:19.775+09:00  INFO 18888 --- [MySpringBootLab] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T17:48:19.779+09:00  INFO 18888 --- [MySpringBootLab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-19T17:48:19.784+09:00  INFO 18888 --- [MySpringBootLab] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
