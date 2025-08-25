@@ -1,9 +1,9 @@
 package com.rookies4.MySpringbootLab.exception.advice;
 
+import com.rookies4.MySpringbootLab.exception.advice.ErrorObject;
 import com.rookies4.MySpringbootLab.exception.BusinessException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ProblemDetail;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
