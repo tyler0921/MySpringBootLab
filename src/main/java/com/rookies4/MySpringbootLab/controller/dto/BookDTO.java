@@ -2,22 +2,13 @@ package com.rookies4.MySpringbootLab.controller.dto;
 
 import com.rookies4.MySpringbootLab.entity.Book;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Past;
-import jakarta.validation.constraints.Pattern;
-import jakarta.validation.constraints.PositiveOrZero;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.validation.constraints.*;
+import lombok.*;
 
 import java.time.LocalDate;
 
 public class BookDTO {
 
-    /**
-     * 📌 신규 등록 / 전체 수정(put) 요청 DTO
-     */
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
@@ -41,12 +32,9 @@ public class BookDTO {
         private LocalDate publishDate;
 
         @Valid
-        private BookDetailDTO detailRequest;
+        private BookDetailDTO detail;
     }
 
-    /**
-     * 📌 BookDetail 등록/수정용 DTO
-     */
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
@@ -60,9 +48,6 @@ public class BookDTO {
         private String edition;
     }
 
-    /**
-     * 📌 조회 응답 DTO
-     */
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
@@ -107,38 +92,6 @@ public class BookDTO {
     @Builder
     public static class BookDetailResponse {
         private Long id;
-        private String description;
-        private String language;
-        private Integer pageCount;
-        private String publisher;
-        private String coverImageUrl;
-        private String edition;
-    }
-
-    /**
-     * 📌 부분수정(PATCH) DTO
-     */
-    @Data
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @Builder
-    public static class PatchRequest {
-        private String title;
-        private String author;
-        private String isbn;
-        private Integer price;
-        private LocalDate publishDate;
-        private BookDetailDTO detailRequest;
-    }
-
-    /**
-     * 📌 BookDetail 전용 PATCH DTO
-     */
-    @Data
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @Builder
-    public static class BookDetailPatchRequest {
         private String description;
         private String language;
         private Integer pageCount;
